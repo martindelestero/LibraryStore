@@ -16,13 +16,13 @@ namespace Library.Controllers
         public ActionResult Contenido()
         {
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Saturday || DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
             {
                 return Redirect("/");
             }
 
 
-            return Content("Contenido TEST");
+            return Content("Cerrado los dias de la semana");
 
         }
 
