@@ -8,6 +8,11 @@ namespace Library.Controllers
 {
     public class HomeController : Controller
     {
+        public String Details()
+        {
+            return "Library Details ";
+        }
+         
         public ActionResult Index()
         {
             return View();
