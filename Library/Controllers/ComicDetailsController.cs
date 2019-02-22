@@ -16,7 +16,7 @@ namespace Library.Controllers
         public ActionResult Contenido()
         {
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
             {
                 return Redirect("/");
             }
