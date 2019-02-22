@@ -12,5 +12,19 @@ namespace Library.Controllers
         {
             return "BOOKS DETAILS";
         }
+
+        public ActionResult Contenido()
+        {
+
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            {
+                return Redirect("/");
+            }
+
+
+            return Content("Contenido TEST");
+
+        }
+
     }
 }
