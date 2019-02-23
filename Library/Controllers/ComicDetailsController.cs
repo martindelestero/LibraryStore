@@ -18,7 +18,8 @@ namespace Library.Controllers
 
             if (DateTime.Today.DayOfWeek == DayOfWeek.Saturday || DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
             {
-                return Redirect("/");
+                //  return Redirect("/");
+                return View();
             }
 
 
