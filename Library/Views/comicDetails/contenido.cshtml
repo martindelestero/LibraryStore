@@ -1,14 +1,5 @@
 ﻿@{
     Layout = null;
-    var seriesTitle = "Spider Man";
-    var issueNumber = 700;
-    var description = "Final issue";
-    var artists = new string[]  // array to add artists, if statement to check if there are any content to render, if false do not render
-        {
-            "Script: Ana bonetto",
-            //"Edition: Shan kumar"
-        };
-
     
 }
 
@@ -24,21 +15,21 @@
         <h1>Titles</h1>
 
     </div>
-    <h2>@seriesTitle</h2>
+    <h2>@ViewBag.SeriesTitle</h2>
 
-    <h3>Issue #@issueNumber</h3>
+    <h3>Issue #@ViewBag.IssueNumber</h3>
 
     <h5>Description:</h5>
 
     <div>
-        <h6>@description</h6>
+        <h6>@ViewBag.Description</h6>
     </div>
-    @if (artists.Length > 0) //render if there are any artist listed
+    @if (ViewBag.artists.Length > 0) //render if there are any artist listed
     {
         <h4>Artists</h4>
         <div>
             <ul>
-                @foreach (var art in artists)
+                @foreach (var art in ViewBag.artists)
                 {
                     <li>@art</li>
                 }
